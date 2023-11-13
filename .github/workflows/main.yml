@@ -30,12 +30,10 @@ jobs:
           pip3 install --user meson
 
       - name: update path
-        run:
-          "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
+        run: "C:\\Users\\runneradmin\\AppData\\Roaming\\Python\\Python37\\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
 
       - name: show path
-        run: 
-          echo $env:path
+        run: echo $env:path
           
 
       # Runs a set of commands using the runners shell
