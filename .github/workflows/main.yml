@@ -36,14 +36,14 @@ jobs:
         run: echo $env:GITHUB_PATH
 
       - name: run meson
-        run: meson  
+        run: meson setup build --prefix=c:\postgresql\head  
           
 
       # Runs a set of commands using the runners shell
-      #- name: checkout postgresql
-      #  run: |
-      #    git clone --depth=1 https://github.com/postgres/postgres.git
-      #    pushd postgres
-      #    meson configure build
-      #    cd build
-      #    ninja
+      - name: checkout postgresql
+        run: |
+          git clone --depth=1 https://github.com/postgres/postgres.git
+          pushd postgres
+          meson setup build --prefix=c:\postgresql\head
+          cd build
+          ninja install
