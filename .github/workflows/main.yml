@@ -27,10 +27,13 @@ jobs:
 
       - name: install meson
         run: |
-          choco install meson
-          choco install ninja
+          pip3 install --user meson
+          pip3 install --user ninja
           choco install winflexbison3
           choco install openssl
+
+      - name: update path
+        run: echo "C:\\Users\\runneradmin\\AppData\\Roaming\\Python\\Python37\\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
 
       # Runs a set of commands using the runners shell
       - name: checkout postgresql
