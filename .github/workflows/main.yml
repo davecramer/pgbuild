@@ -28,9 +28,13 @@ jobs:
       - name: install meson
         run: |
           pip3 install --user meson
-          "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
-          echo $env:path
-          meson
+
+      - name: update path
+        run: "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
+
+      - name: show path
+        run: echo $env:path
+          
 
       # Runs a set of commands using the runners shell
       #- name: checkout postgresql
