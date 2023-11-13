@@ -25,16 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: show path
+      - name: install meson
         run: |
+          pip3 install --user meson
+          echo "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           echo $env:path
-
-      #- name: install meson
-      #  run: |
-      #    pip3 install --user meson
-      #    echo ";C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" >> $GITHUB_PATH
-      #    echo "$PATH"
-      #    meson
+          meson
 
       # Runs a set of commands using the runners shell
       #- name: checkout postgresql
