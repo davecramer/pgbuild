@@ -35,10 +35,6 @@ jobs:
       - name: show path
         run: echo $env:GITHUB_PATH
 
-      - name: run meson
-        run: meson setup build --prefix=c:\postgresql\head  
-          
-
       # Runs a set of commands using the runners shell
       - name: checkout postgresql
         run: |
