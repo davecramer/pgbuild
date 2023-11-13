@@ -29,12 +29,13 @@ jobs:
         run: |
           pip3 install --user meson
           echo "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" >> $GITHUB_PATH
+          meson
 
       # Runs a set of commands using the runners shell
-      - name: checkout postgresql
-        run: |
-          git clone --depth=1 https://github.com/postgres/postgres.git
-          pushd postgres
-          meson configure build
-          cd build
-          ninja
+      #- name: checkout postgresql
+      #  run: |
+      #    git clone --depth=1 https://github.com/postgres/postgres.git
+      #    pushd postgres
+      #    meson configure build
+      #    cd build
+      #    ninja
