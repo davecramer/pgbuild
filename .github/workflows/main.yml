@@ -31,7 +31,7 @@ jobs:
 
       - name: update path
         run:
-          C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
+          "C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
 
       - name: show path
         run: 
