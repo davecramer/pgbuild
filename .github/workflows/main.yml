@@ -28,7 +28,8 @@ jobs:
       - name: install meson
         run: |
           pip3 install --user meson
-
+          pip3 install --user ninja
+          
       - name: update path
         run: echo "C:\\Users\\runneradmin\\AppData\\Roaming\\Python\\Python37\\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
 
