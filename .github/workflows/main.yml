@@ -24,8 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+
       - name: show path
-        run: echo "$PATH"
+        run: |
+          echo "hello world"
+          echo "%PATH%"
 
       #- name: install meson
       #  run: |
