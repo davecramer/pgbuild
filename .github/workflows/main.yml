@@ -28,7 +28,7 @@ jobs:
       - name: install meson
         run: |
           pip3 install --user meson
-          set PATH=%PATH%;C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts
+          $env:Path += ";C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts"
 
       # Runs a set of commands using the runners shell
       - name: checkout postgresql
