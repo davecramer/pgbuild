@@ -43,3 +43,9 @@ jobs:
           meson setup build --prefix=c:\postgresql\head -Dssl=openssl
           cd build
           ninja install
+
+      - name: checkout psqlodbc
+        run: |
+          git clone --depth=1 https://github.com/postgresql-interfaces/psqlodbc.git
+          pushd psqlodbc
+          BuildAll.bat    
