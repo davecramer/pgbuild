@@ -4,9 +4,9 @@
   </title>
   <x86 disabled="no">
     <libpq version="">
-      <include>c:/postgres/x86/16/include</include>
-      <lib>c:/postgres/x86/16/lib</lib>
-      <bin>c:/postgres/x86/16/bin</bin>
+      <include>c:/postgresql/x86/16/include</include>
+      <lib>c:/postgresql/x86/16/lib</lib>
+      <bin>c:/postgresql/x86/16/bin</bin>
     </libpq>
     <setvcvars>
     </setvcvars>
@@ -17,9 +17,9 @@
   </x86>
   <x64>
     <libpq version="">
-      <include>c:\postgres\x64\16\include</include>
-      <lib>c:\postgres\x64\16\lib</lib>
-      <bin>c:\postgres\x64\16\bin</bin>
+      <include>c:\postgresql\x64\16\include</include>
+      <lib>c:\postgresql\x64\16\lib</lib>
+      <bin>c:\postgresql\x64\16\bin</bin>
     </libpq>
     <setvcvars>
     </setvcvars>
