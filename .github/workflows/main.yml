@@ -49,4 +49,5 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/postgresql-interfaces/psqlodbc.git
           pushd psqlodbc
-          ./BuildAll.bat    
+          cp ../configuration.xml winbuild
+          ./BuildAll.bat -P win32 -A   
