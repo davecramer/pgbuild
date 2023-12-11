@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration version="" formatVersion="0.4" vcversion="" toolset="">
+  <title>
+  </title>
+  <x86 disabled="no">
+    <libpq version="">
+      <include>c:/postgres/x86/16/include</include>
+      <lib>c:/postgres/x86/16/lib</lib>
+      <bin>c:/postgres/x86/16/bin</bin>
+    </libpq>
+    <setvcvars>
+    </setvcvars>
+    <build_macros>
+    </build_macros>
+    <runtime_folder>
+    </runtime_folder>
+  </x86>
+  <x64>
+    <libpq version="">
+      <include>c:\postgres\x64\16\include</include>
+      <lib>c:\postgres\x64\16\lib</lib>
+      <bin>c:\postgres\x64\16\bin</bin>
+    </libpq>
+    <setvcvars>
+    </setvcvars>
+    <build_macros>
+    </build_macros>
+    <runtime_folder>
+    </runtime_folder>
+  </x64>
+  <BuildResult>
+    <Date>12/11/2023 10:29:36</Date>
+    <VisualStudioVersion>16.0</VisualStudioVersion>
+    <PlatformToolset>v142</PlatformToolset>
+    <ToolsVersion>Current</ToolsVersion>
+    <Platform>Win32</Platform>
+  </BuildResult>
+</Configuration>

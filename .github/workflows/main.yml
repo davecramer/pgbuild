@@ -40,7 +40,8 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/postgres/postgres.git
           pushd postgres
-          meson setup build --prefix=c:\postgresql\head -Dssl=openssl
+          git checkout REL_16_1
+          meson setup build --prefix=c:\postgresql\x64\16 -Dssl=openssl
           cd build
           ninja install
 
